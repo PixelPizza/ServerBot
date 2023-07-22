@@ -1,4 +1,4 @@
-name: bot-template
+name: serverbot
 packagePath: .
 org: pixelpizza
 monoRepo: false

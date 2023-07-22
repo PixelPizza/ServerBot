@@ -1,7 +1,7 @@
 {
-	"name": "@pixelpizza/bot-template",
+	"name": "@pixelpizza/serberbot",
 	"version": "1.0.0",
-	"description": "Template for creating discord bots with Sapphire",
+	"description": "",
 	"main": "dist/index.js",
 	"directories": {
 		"lib": "src",
@@ -66,7 +66,6 @@
 		"lint-staged": "^13.2.3",
 		"pinst": "^3.0.0",
 		"prettier": "^3.0.0",
-		"pretty-quick": "^3.1.3",
 		"tsup": "^7.1.0",
 		"typescript": "^5.1.6",
 		"vitest": "^0.33.0"
