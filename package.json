@@ -26,7 +26,9 @@
 		"postinstall": "husky install",
 		"prepack": "rollup-type-bundler -v -e node:url node:events && pinst --disable",
 		"postpack": "pinst --enable",
-		"start": "yarn build && node ."
+		"start": "yarn build && node .",
+		"dev": "cross-env NODE_ENV=development yarn start",
+		"prod": "cross-env NODE_ENV=production yarn start"
 	},
 	"repository": {
 		"type": "git",
@@ -42,9 +44,14 @@
 	"dependencies": {
 		"@kaname-png/plugin-env": "^1.1.7",
 		"@sapphire/decorators": "^6.0.2",
+		"@sapphire/discord.js-utilities": "^7.0.1",
 		"@sapphire/framework": "^4.5.1",
+		"@sapphire/plugin-logger": "^3.0.5",
+		"@sapphire/plugin-subcommands": "^4.0.2",
+		"discord-api-types": "^0.37.50",
 		"discord.js": "14.x",
-		"dotenv": "^16.3.1"
+		"dotenv-cra": "^3.0.3",
+		"googlethis": "1.2.7"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^17.6.7",
@@ -58,6 +65,7 @@
 		"@typescript-eslint/eslint-plugin": "^6.1.0",
 		"@typescript-eslint/parser": "^6.1.0",
 		"@vitest/coverage-v8": "^0.33.0",
+		"cross-env": "^7.0.3",
 		"eslint": "^8.45.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-deprecation": "^1.4.1",
