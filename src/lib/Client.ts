@@ -7,7 +7,7 @@ export class Client<
 		inDevelopment: boolean = container.env.isNodeEnvEqualTo("development")
 	) {
 		super({
-			intents: [],
+			intents: ["Guilds", "GuildMessages", "DirectMessages"],
 			logger: {
 				level: inDevelopment ? LogLevel.Debug : LogLevel.Info
 			}
